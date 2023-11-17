@@ -3,8 +3,7 @@ plugins {
 }
 
 repositories {
-    maven("https://maven.aliyun.com/repository/public/")
-    maven("https://mirrors.huaweicloud.com/repository/maven/")
+    maven("https://maven.aliyun.com/repository/gradle-plugin")
     gradlePluginPortal() // so that external plugins can be resolved in dependencies section
 }
 
