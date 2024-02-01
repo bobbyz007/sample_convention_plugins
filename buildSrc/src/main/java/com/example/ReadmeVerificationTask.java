@@ -31,7 +31,7 @@ public abstract class ReadmeVerificationTask extends DefaultTask {
         for (String requiredSection : getReadmePatterns().get()) {
             Pattern pattern = Pattern.compile(requiredSection, Pattern.MULTILINE);
             if (!pattern.matcher(readmeContents).find()) {
-                throw new RuntimeException("README should contain section: " + pattern.pattern());
+                throw new RuntimeException("README.md should contain section: " + pattern.pattern());
             }
         }
     }

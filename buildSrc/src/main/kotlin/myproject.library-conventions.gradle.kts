@@ -31,7 +31,7 @@ publishing {
     }
 }
 
-// The project requires libraries to have a README containing sections configured below
+// The project requires libraries to have a README.md containing sections configured below
 val readmeCheck by tasks.registering(com.example.ReadmeVerificationTask::class) {
     readme = layout.projectDirectory.file("README.md")
     readmePatterns = listOf("^## API$", "^## Changelog$")
